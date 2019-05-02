@@ -6,6 +6,7 @@ module.exports = (req, res, next) => {
         console.log('token-----', token)
         const retrivedToken = jwt.verify(token, process.env.JWT_SECRET);
         req.user = retrivedToken;
+        console.error('in authenticate middleware', retrivedToken);
         next();
     } catch (error) {
         console.log('error is', error)
