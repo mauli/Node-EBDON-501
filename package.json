@@ -1,0 +1,33 @@
+{
+  "name": "sampleapp-495",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serverdev": "env-cmd ./config/dev.env nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/address": "^2.0.0",
+    "@hapi/hoek": "^6.2.1",
+    "@hapi/joi": "^15.0.0",
+    "@hapi/topo": "^3.1.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-async-errors": "^3.1.1",
+    "hbs": "^4.0.4",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.2.3",
+    "mongoose": "^5.5.4",
+    "winston": "^3.2.1",
+    "winston-mongodb": "^5.0.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^8.0.2",
+    "nodemon": "^1.18.11"
+  },
+  "description": ""
+}
